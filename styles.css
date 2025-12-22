@@ -1,0 +1,67 @@
+body {
+    background-image: url("https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ21kZWVtZTF1NHRhbm5kYThqY2hzdHBoemFzNmxmejQwNDlkOXl2byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/FlodpfQUBSp20/giphy.gif");
+    color: white;
+}
+.header {
+    width: 85%;
+    margin: auto;
+    text-align: center;
+}
+.headerTitle {
+    font-size: 40px;
+}
+.parallelogram {
+    width: 150px;
+    height: 100px;
+    transform: skew(20deg);
+    background: red;
+}
+.page {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    border: black 1px solid;
+    justify-content: center;
+}
+.center, .right {
+    border: white 1px solid;
+    padding: 15px;
+
+}
+.leftbox {
+    padding: 10px;
+    margin: 10px;
+    border: 1px white solid;
+    display: flex;
+    flex-direction: column;
+}
+.leftboxTitle {
+    font-size: 30px;
+}
+.leftboxContent {
+    font-size: 20px;
+}
+.center {
+    display: flex;
+    flex-direction: column;
+}
+.centerWindow {
+    border: 1px red solid;
+    padding-top: 30px;
+}
+.centerbox {
+    display: flex;
+    flex-direction: column;
+    border: 1px white solid;
+    margin: 20px;
+}
+.centerHeader {
+    font-size: 35px;
+}
+.centerTitle {
+    font-size: 30px;
+}
+.centerContent {
+    font-size: 20px;
+}
