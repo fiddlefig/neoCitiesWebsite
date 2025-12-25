@@ -2,6 +2,10 @@ body {
     background-image: url("https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ21kZWVtZTF1NHRhbm5kYThqY2hzdHBoemFzNmxmejQwNDlkOXl2byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/FlodpfQUBSp20/giphy.gif");
     color: white;
 }
+@font-face {
+    font-family: EHSMB;
+    src: url('/fonts/EHSMB.TTF');
+}
 .header {
     width: 85%;
     margin: auto;
@@ -10,13 +14,24 @@ body {
 .headerTitle {
     font-size: 40px;
 }
+.topBar {
+    display: flex;
+    width: 60%;
+    margin: auto;
+    justify-content: space-around;
+}
+.logo {
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    font-size: EHSMB;
+}
 .gundam {
     width: 80px;
 }
 .gundamBar {
     
-    width: 60%;
-    margin: auto;
+    width: 40%;
     display: flex;
     justify-content: end;
 
@@ -53,6 +68,9 @@ body {
     justify-content: space-between;
     background-color: rgb(53,53,53);
 }
+#computer:hover {
+
+}
 
 
 .center {
@@ -64,7 +82,6 @@ body {
 .centerbox {
     display: flex;
     flex-direction: column;
-    border: 5px double rgb(53, 53, 53);
     margin: 20px;
 }
 .centerHeader {
@@ -75,6 +92,9 @@ body {
 }
 .centerContent {
     font-size: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
     
 }
 .centerWindowBar {
@@ -107,15 +127,18 @@ body {
     font-size: 13px;
     text-align: center;
     padding: 3px;
+    display: flex;
+    flex-direction: column;
 }
 .mediaAlbumCover {
-    width: 150px;
-    height: 150px;
-    padding: 10px;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
 }
 .album {
-    width: inherit;
-    height: inherit;
+    width: 170px;
+    height: 170px;
+    
 }
 .MDIcons {
     width: 20px;
@@ -124,7 +147,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     padding: 10px;
-    border-top: rgb(53, 53, 53) 5px ridge;
+    
 }
 #backward {
     transform: rotate(180deg);
@@ -140,12 +163,13 @@ body {
 }
 .rightWindowBar {
     padding: 4px;
-    border-bottom: 5px ridge red;
+    border-bottom: 5px  inset rgb(53, 53, 53);
     display: flex;
     justify-content: space-between;
+    background-color: rgb(53, 53, 53);
 }
 .rightbox {
-    border: 5px red ridge;
+    border: 5px rgb(53, 53, 53) double;
 }
 .rightContent {
     display: flex;
@@ -156,4 +180,15 @@ body {
 }
 .smallgif {
     width: 50px;
+}
+.boxgifs, .boxes {
+    display: flex;
+    flex-direction: column;
+}
+.boxes {
+    margin: 10px;
+    align-items: center;
+}
+.boxgifs {
+    width: 100px;
 }
