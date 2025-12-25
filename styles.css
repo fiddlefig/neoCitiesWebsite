@@ -29,17 +29,10 @@ body {
     border: black 1px solid;
     justify-content: center;
 }
-.center, .right {
-    border: purple 5px ridge;
-    /* padding: 15px; */
-
-}
-
-
-.leftbox {
+.leftbox, .rightbox {
     /* padding: 10px; */
     margin: 10px;
-    border: 5px navy ridge;
+    border: 5px rgb(53,53,53) double;
     display: flex;
     flex-direction: column;
     background-color: gray;
@@ -53,23 +46,25 @@ body {
     justify-content: center;
 }
 .leftWindowBar {
-    padding: 4px;
-    border-bottom: 5px ridge navy;
+    padding: 2px;
+    border-bottom: 5px inset rgb(53,53,53);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: rgb(53,53,53);
 }
 
 
 .center {
     display: flex;
     flex-direction: column;
-    background-color: rgb(100, 100, 100);
+    background-color: grey;
+    border: 5px double rgb(53,53,53);
 }
 .centerbox {
     display: flex;
     flex-direction: column;
-    border: 5px ridge purple;
+    border: 5px double rgb(53, 53, 53);
     margin: 20px;
 }
 .centerHeader {
@@ -84,11 +79,12 @@ body {
 }
 .centerWindowBar {
     padding: 4px;
-    border-bottom: 5px ridge purple;
+    border-bottom: 5px ridge rgb(53,53,53);
     color: black;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: rgb(53, 53, 53);
 }
 .windowIcon {
     width: 25px;
@@ -96,8 +92,8 @@ body {
 .centerWindowTitle {
     display: flex;
     align-items: center;
-    font-size: 20px;
-    color: purple;
+    font-size: 18px;
+    color: rgb(255, 0, 255);
 }
 .windowIcon {
     display: flex;
@@ -106,6 +102,11 @@ body {
 }
 .musicPlayer {
     
+}
+.trackInfo {
+    font-size: 13px;
+    text-align: center;
+    padding: 3px;
 }
 .mediaAlbumCover {
     width: 150px;
@@ -123,11 +124,36 @@ body {
     display: flex;
     justify-content: space-evenly;
     padding: 10px;
-    border-top: navy 5px ridge;
+    border-top: rgb(53, 53, 53) 5px ridge;
 }
 #backward {
     transform: rotate(180deg);
 }
 #play, #backward, #forward {
     cursor: pointer;
+}
+
+
+
+.right {
+    margin: 8px;
+}
+.rightWindowBar {
+    padding: 4px;
+    border-bottom: 5px ridge red;
+    display: flex;
+    justify-content: space-between;
+}
+.rightbox {
+    border: 5px red ridge;
+}
+.rightContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.smallgif {
+    width: 50px;
 }

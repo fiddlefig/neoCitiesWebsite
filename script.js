@@ -1,18 +1,21 @@
-let play = document.getElementById("play");
+let playBtn = document.getElementById("play");
+const mp3 = document.getElementById("music");
 
-play.addEventListener("click", playBtn);
-let buttonChange = 0;
-// play = 0
-// pause = 1
+playBtn.addEventListener("click", playBtnChange);
+let playButtonStatus = 0;
+// play = 1
+// pause = 0
 
-function playBtn() {
-    if (buttonChange == 0) {
+function playBtnChange() {
+    if (playButtonStatus == 1) {
         play.src = "/images/icons8-pause-button-50.png";
-        buttonChange = 1;
+        playButtonStatus = 0;
+        mp3.play();
     }
-    else if (buttonChange == 1) {
+    else if (playButtonStatus == 0) {
         play.src = "/images/icons8-play-button-50.png";
-        buttonChange = 0;
+        playButtonStatus = 1;
+        mp3.pause();
     }
 }
 
