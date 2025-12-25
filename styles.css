@@ -10,11 +10,16 @@ body {
 .headerTitle {
     font-size: 40px;
 }
-.parallelogram {
-    width: 150px;
-    height: 100px;
-    transform: skew(20deg);
-    background: red;
+.gundam {
+    width: 80px;
+}
+.gundamBar {
+    
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: end;
+
 }
 .page {
     width: 80%;
@@ -25,23 +30,37 @@ body {
     justify-content: center;
 }
 .center, .right {
-    border: white 5px ridge;
+    border: purple 5px ridge;
     /* padding: 15px; */
 
 }
+
+
 .leftbox {
-    padding: 10px;
+    /* padding: 10px; */
     margin: 10px;
-    border: 1px white solid;
+    border: 5px navy ridge;
     display: flex;
     flex-direction: column;
+    background-color: gray;
 }
 .leftboxTitle {
     font-size: 30px;
 }
 .leftboxContent {
     font-size: 20px;
+    display: flex;
+    justify-content: center;
 }
+.leftWindowBar {
+    padding: 4px;
+    border-bottom: 5px ridge navy;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
 .center {
     display: flex;
     flex-direction: column;
@@ -50,7 +69,7 @@ body {
 .centerbox {
     display: flex;
     flex-direction: column;
-    border: 5px ridge white;
+    border: 5px ridge purple;
     margin: 20px;
 }
 .centerHeader {
@@ -61,12 +80,11 @@ body {
 }
 .centerContent {
     font-size: 20px;
+    
 }
 .centerWindowBar {
-    padding: 8px;
-    border-bottom: 5px ridge white;
-    
-    background-color: rgb(62, 59, 59);
+    padding: 4px;
+    border-bottom: 5px ridge purple;
     color: black;
     display: flex;
     flex-direction: row;
@@ -85,4 +103,31 @@ body {
     display: flex;
     align-items: center;
     
+}
+.musicPlayer {
+    
+}
+.mediaAlbumCover {
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+}
+.album {
+    width: inherit;
+    height: inherit;
+}
+.MDIcons {
+    width: 20px;
+}
+.mediaControls {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    border-top: navy 5px ridge;
+}
+#backward {
+    transform: rotate(180deg);
+}
+#play, #backward, #forward {
+    cursor: pointer;
 }
